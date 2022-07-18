@@ -2,7 +2,6 @@ import {BrowserModule, Title} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ScullyLibModule} from '@scullyio/ng-lib';
 
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
@@ -41,7 +40,6 @@ import {SlideshowComponent} from './home/slideshow/slideshow.component';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    ScullyLibModule,
   ],
   providers: [PortfolioService, Title],
   bootstrap: [AppComponent],

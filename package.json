@@ -14,13 +14,7 @@
     "deploy": "ng deploy",
     "lint": "ng lint",
     "e2e": "cypress run",
-    "e2e:i": "cypress open",
-    "favicon": "real-favicon check-for-update --fail-on-update faviconData.json",
-    "favicon:generate": "real-favicon generate faviconDescription.json faviconData.json src",
-    "scully": "scully --",
-    "scully:serve": "ng build && scully -- && scully killServer --no-warning && npx scully serve --",
-    "scully:build": "ng build && scully -- --scanRoutes",
-    "scully:build:verbose": "ng build --verbose && scully -- --scanRoutes --logSeverity=normal"
+    "e2e:i": "cypress open"
   },
   "private": true,
   "dependencies": {
@@ -32,12 +26,8 @@
     "@angular/platform-browser": "^13.3.10",
     "@angular/platform-browser-dynamic": "^13.3.10",
     "@angular/router": "^13.3.10",
-    "@scullyio/init": "^2.1.32",
-    "@scullyio/ng-lib": "^2.0.2",
-    "@scullyio/scully": "^2.1.32",
-    "@scullyio/scully-plugin-puppeteer": "^2.1.32",
-    "rxjs": "^7.5.5",
-    "zone.js": "^0.11.5"
+    "rxjs": "^7.5.6",
+    "zone.js": "^0.11.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^13.3.7",
@@ -54,17 +44,17 @@
     "@typescript-eslint/parser": "^5.26.0",
     "angular-cli-ghpages": "^1.0.0",
     "cli-real-favicon": "^0.0.8",
-    "cypress": "^9.7.0",
-    "eslint": "^8.16.0",
-    "jasmine-core": "^4.1.1",
+    "cypress": "^10.3.0",
+    "eslint": "^8.20.0",
+    "jasmine-core": "^4.2.0",
     "jasmine-spec-reporter": "~7.0.0",
-    "karma": "^6.3.20",
+    "karma": "^6.4.0",
     "karma-chrome-launcher": "^3.1.1",
     "karma-coverage-istanbul-reporter": "^3.0.3",
-    "karma-jasmine": "^5.0.1",
+    "karma-jasmine": "^5.1.0",
     "karma-jasmine-html-reporter": "^2.0.0",
     "karma-teamcity-reporter": "^1.1.0",
-    "ts-node": "^10.8.0",
-    "typescript": "~4.6.4"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   }
 }
