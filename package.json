@@ -44,7 +44,6 @@
     "@typescript-eslint/parser": "^5.29.0",
     "angular-cli-ghpages": "^1.0.0",
     "cli-real-favicon": "^0.0.8",
-    "cypress": "^10.3.0",
     "eslint": "^8.18.0",
     "jasmine-core": "^4.2.0",
     "jasmine-spec-reporter": "~7.0.0",
