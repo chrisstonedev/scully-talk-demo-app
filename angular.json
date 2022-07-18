@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "personal-website": {
+    "scully-talk-demo-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "personal-website:build"
+            "browserTarget": "scully-talk-demo-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "personal-website:build:production"
+              "browserTarget": "scully-talk-demo-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "personal-website:build"
+            "browserTarget": "scully-talk-demo-app:build"
           }
         },
         "test": {
@@ -98,9 +98,6 @@
             ]
           }
         },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
-        },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
@@ -108,20 +105,6 @@
               "src/**/*.ts",
               "src/**/*.html"
             ]
-          }
-        }
-      }
-    },
-    "personal-website-e2e": {
-      "root": "",
-      "sourceRoot": "",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "personal-website:serve"
           }
         }
       }
