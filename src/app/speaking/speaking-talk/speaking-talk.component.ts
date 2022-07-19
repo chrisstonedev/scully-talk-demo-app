@@ -1,13 +1,13 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {SpeakingService} from '../speaking.service';
-import {Talk} from '../talk';
-import {Title} from '@angular/platform-browser';
-import {ListType} from './conference-list/conference-list.component';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { SpeakingService } from '../speaking.service';
+import { Talk } from '../talk';
+import { Title } from '@angular/platform-browser';
+import { ListType } from './conference-list/conference-list.component';
 
 @Component({
   selector: 'app-speaking-talk',
-  templateUrl: './speaking-talk.component.html',
+  templateUrl: './speaking-talk.component.html'
 })
 export class SpeakingTalkComponent implements OnInit {
   talk: Talk;

@@ -1,0 +1,18 @@
+.back-link {
+  display: flex;
+  justify-content: center;
+
+  a {
+    background: #014;
+    border-radius: 4px;
+    color: #fffb;
+    cursor: pointer;
+    font-size: large;
+    padding: 5px 10px;
+
+    &:hover {
+      background: #125;
+      color: white;
+    }
+  }
+}

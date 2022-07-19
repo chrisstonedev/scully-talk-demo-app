@@ -20,14 +20,14 @@ function getTransitionState(moveToTheRight: boolean) {
     query(':leave', animateChild()),
     group([
       query(':leave', [
-        animate('.5s ease-out', style({
+        animate('1s ease-out', style({
           ...(!moveToTheRight && { left: '100%' }),
           ...(moveToTheRight && { right: '100%' }),
           opacity: 0
         }))
       ]),
       query(':enter', [
-        animate('.5s ease-out', style({
+        animate('1s ease-out', style({
           ...(!moveToTheRight && { left: '0%' }),
           ...(moveToTheRight && { right: '0%' }),
           opacity: 1

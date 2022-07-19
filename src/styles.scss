@@ -14,11 +14,13 @@ body {
 
 h1 {
   font-size: 28pt;
+  margin-bottom: 0;
 }
 
 a {
   color: #88f;
-  transition: .2s;
+  transition: .5s;
+  text-decoration: none;
 
   &:hover {
     color: #bbf;
@@ -39,24 +41,6 @@ img {
 
 :root {
   --color-ikb: #211dc3;
-}
-
-.back-link {
-  display: flex;
-  justify-content: center;
-
-  a {
-    background: #014;
-    color: #fffb;
-    cursor: pointer;
-    padding: 5px 10px;
-    text-decoration: none;
-
-    &:hover {
-      background: #125;
-      color: white;
-    }
-  }
 }
 
 .work-card-grid {
@@ -80,4 +64,9 @@ img {
       margin: 0;
     }
   }
+}
+
+article {
+  margin: 0 auto;
+  max-width: 1200px;
 }

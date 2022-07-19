@@ -1,0 +1,29 @@
+.top-row {
+  display: flex;
+  gap: 20px;
+
+  .about-me-list {
+    flex: 2;
+    font-size: x-large;
+    line-height: 1.75;
+  }
+
+  .profile-picture {
+    flex: 1;
+  }
+}
+
+.social-icons {
+  column-gap: 16px;
+  display: inline-flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 16px;
+  padding: 0;
+
+  li a svg {
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+  }
+}
