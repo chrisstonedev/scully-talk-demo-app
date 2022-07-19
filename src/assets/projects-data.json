@@ -1,7 +1,7 @@
 [
   {
-    "slug": "website",
-    "name": "Website",
+    "slug": "ng-build",
+    "name": "ng build",
     "tagline": "TypeScript Angular app",
     "dateCreated": "2018-03-07",
     "dateUpdated": "2022-01-18",

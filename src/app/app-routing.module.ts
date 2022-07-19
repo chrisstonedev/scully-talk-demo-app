@@ -3,7 +3,7 @@ import {RouterModule} from '@angular/router';
 
 import {HomeComponent} from './home/home.component';
 import {ProjectsListComponent} from './portfolio/projects-list/projects-list.component';
-import {WorkComponent} from './work/work.component';
+import {WorkComponent} from './why/work.component';
 import {ContactComponent} from './contact/contact.component';
 import {ProjectDetailComponent} from './portfolio/project-detail/project-detail.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
