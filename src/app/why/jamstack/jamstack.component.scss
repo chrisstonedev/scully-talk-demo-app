@@ -1,0 +1,29 @@
+input {
+  display: none;
+
+  &:checked + label {
+    background: #339;
+    color: inherit;
+  }
+}
+
+label {
+  background: #002;
+  border-radius: 16px;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  padding: 16px;
+  transition: 1s;
+
+  & > h3 {
+    font-size: 16px;
+    margin: 0 0 16px;
+  }
+
+  & > p {
+    font-size: 14px;
+    font-style: italic;
+    margin: 0;
+  }
+}
