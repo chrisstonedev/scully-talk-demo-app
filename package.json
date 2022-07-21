@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "scully": "scully --",
     "scully:serve": "scully serve --",
-    "scully:scan": "scully --scanRoutes"
+    "scully:scan": "scully --scanRoutes",
+    "scully:full-build-serve": "npm run build && npm run scully && npm run scully:serve"
   },
   "private": true,
   "dependencies": {
