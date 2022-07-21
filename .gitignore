@@ -27,7 +27,6 @@
 !.vscode/extensions.json
 
 # misc
-/.angular/cache
 /.sass-cache
 /connect.lock
 /coverage
@@ -52,16 +51,6 @@ Thumbs.db
 # Cypress
 cypress/screenshots
 cypress/videos
-
-# Scully
-.scully
-scully.log
-scully.*.config.js
-scully-routes.json
-scullyStats.json
-/scully/**/*.js
-/scully/**/*.js.map
-/scully/**/*.d.ts
 
 # Local Netlify folder
 .netlify
