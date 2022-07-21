@@ -110,6 +110,7 @@
       }
     }
   },
+  "defaultProject": "scully-talk-demo-app",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
@@ -118,10 +119,5 @@
     "@schematics/angular:directive": {
       "prefix": "app"
     }
-  },
-  "cli": {
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ]
   }
 }
