@@ -110,6 +110,7 @@
       }
     }
   },
+  "defaultProject": "personal-website",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
