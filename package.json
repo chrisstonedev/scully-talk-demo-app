@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "test:i": "ng test --browsers=Chrome",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "scully": "npx scully --",
+    "scully:serve": "npx scully serve --"
   },
   "private": true,
   "dependencies": {
