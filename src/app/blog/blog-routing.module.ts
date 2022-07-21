@@ -1,22 +1,17 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-import {BlogComponent} from './blog.component';
+import { BlogComponent } from './blog.component';
 
-const routes: Routes = [
-  {
-    path: ':slug',
-    component: BlogComponent,
-  },
-  {
-    path: '**',
-    component: BlogComponent,
-  }
-];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  imports: [RouterModule.forChild([
+    { path: '', component: BlogComponent },
+    { path: ':slug', component: BlogComponent },
+    { path: '**', component: BlogComponent }
+  ])],
+  exports: [RouterModule]
 })
-export class BlogRoutingModule {}
+export class BlogRoutingModule {
+}
 

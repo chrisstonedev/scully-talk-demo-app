@@ -9,7 +9,8 @@
     "test:i": "ng test --browsers=Chrome",
     "lint": "ng lint",
     "scully": "scully --",
-    "scully:serve": "scully serve --"
+    "scully:serve": "scully serve --",
+    "scully:scan": "scully --scanRoutes"
   },
   "private": true,
   "dependencies": {

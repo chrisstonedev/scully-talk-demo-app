@@ -13,8 +13,7 @@ import { AboutMeComponent } from './home/about-me/about-me.component';
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(
-      [
+    RouterModule.forRoot([
         { path: '', component: HomeComponent, data: { animationState: 'Home' } },
         { path: 'about-me', component: AboutMeComponent, data: { animationState: 'Home' } },
         { path: 'work', component: WorkComponent, data: { animationState: 'Work' } },
@@ -25,7 +24,8 @@ import { AboutMeComponent } from './home/about-me/about-me.component';
         { path: 'contact', component: ContactComponent, data: { animationState: 'Contact' } },
         { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
         { path: '**', redirectTo: '/' }
-      ], {
+      ],
+      {
         scrollPositionRestoration: 'enabled'
       }
     ),
