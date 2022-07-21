@@ -16,10 +16,6 @@ registerPlugin('router', 'speakingSlugPlugin', async () => {
   });
 });
 
-registerPlugin('router', 'void', async () => {
-  return [];
-});
-
 export const config: ScullyConfig = {
   projectRoot: "./src",
   projectName: "scully-talk-demo-app",
@@ -31,9 +27,6 @@ export const config: ScullyConfig = {
     },
     "/speaking/:slug": {
       type: 'speakingSlugPlugin'
-    },
-    "/about-me": {
-      type: 'void'
     }
   }
 };
