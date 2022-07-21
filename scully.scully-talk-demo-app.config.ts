@@ -22,6 +22,12 @@ export const config: ScullyConfig = {
   // spsModulePath: 'YOUR OWN MODULE PATH HERE',
   outDir: './dist/static',
   routes: {
+    '/blog/:slug': {
+      type: 'contentFolder',
+      slug: {
+        folder: "./blog"
+      }
+    },
     "/portfolio/:slug": {
       type: 'portfolioSlugPlugin'
     },

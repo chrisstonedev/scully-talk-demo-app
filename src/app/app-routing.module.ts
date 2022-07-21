@@ -23,6 +23,7 @@ import { AboutMeComponent } from './home/about-me/about-me.component';
         { path: 'speaking', component: SpeakingComponent, data: { animationState: 'Speaking' } },
         { path: 'speaking/:slug', component: SpeakingTalkComponent, data: { animationState: 'Speaking' } },
         { path: 'contact', component: ContactComponent, data: { animationState: 'Contact' } },
+        { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
         { path: '**', redirectTo: '/' }
       ], {
         scrollPositionRestoration: 'enabled'
