@@ -8,8 +8,8 @@
     "test": "ng test",
     "test:i": "ng test --browsers=Chrome",
     "lint": "ng lint",
-    "scully": "npx scully --",
-    "scully:serve": "npx scully serve --"
+    "scully": "scully --project scully-talk-demo-app",
+    "scully:serve": "scully serve --"
   },
   "private": true,
   "dependencies": {
