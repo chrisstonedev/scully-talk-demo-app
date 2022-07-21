@@ -1,8 +1,24 @@
-import { ScullyConfig } from '@scullyio/scully';
+import { registerPlugin, ScullyConfig } from '@scullyio/scully';
 import '@scullyio/scully-plugin-puppeteer';
 
-/** this loads the default render plugin, remove when switching to something else. */
+const projectData = require('./src/assets/projects-data.json');
+const talkData = require('./src/assets/talks-data.json');
 
+registerPlugin('router', 'portfolioSlugPlugin', async () => {
+  return projectData.map(x => {
+    return {route: `/portfolio/${x.slug}`};
+  });
+});
+
+registerPlugin('router', 'speakingSlugPlugin', async () => {
+  return talkData.map(x => {
+    return {route: `/speaking/${x.slug}`};
+  });
+});
+
+registerPlugin('router', 'void', async () => {
+  return [];
+});
 
 export const config: ScullyConfig = {
   projectRoot: "./src",
@@ -10,5 +26,14 @@ export const config: ScullyConfig = {
   // spsModulePath: 'YOUR OWN MODULE PATH HERE',
   outDir: './dist/static',
   routes: {
+    "/portfolio/:slug": {
+      type: 'portfolioSlugPlugin'
+    },
+    "/speaking/:slug": {
+      type: 'speakingSlugPlugin'
+    },
+    "/about-me": {
+      type: 'void'
+    }
   }
 };
