@@ -21,6 +21,7 @@ import { SlideshowComponent } from './home/slideshow/slideshow.component';
 import { JamstackComponent } from './why/jamstack/jamstack.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 import { BackComponent } from './back/back.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { BackComponent } from './back/back.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ScullyLibModule
   ],
   providers: [PortfolioService, Title],
   bootstrap: [AppComponent]
