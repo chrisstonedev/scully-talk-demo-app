@@ -1,20 +1,20 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import {WorkComponent} from './work.component';
+import { JamstackComponent } from './jamstack.component';
 
 describe('WorkComponent', () => {
-  let component: WorkComponent;
-  let fixture: ComponentFixture<WorkComponent>;
+  let component: JamstackComponent;
+  let fixture: ComponentFixture<JamstackComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [WorkComponent]
+      declarations: [JamstackComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WorkComponent);
+    fixture = TestBed.createComponent(JamstackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

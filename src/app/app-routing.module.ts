@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { ProjectsListComponent } from './portfolio/projects-list/projects-list.component';
-import { WorkComponent } from './why/work.component';
+import { JamstackComponent } from './jamstack/jamstack.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './portfolio/project-detail/project-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,7 +17,7 @@ import { AboutMeComponent } from './home/about-me/about-me.component';
       [
         { path: '', component: HomeComponent, data: { animationState: 'Home' } },
         { path: 'about-me', component: AboutMeComponent, data: { animationState: 'Home' } },
-        { path: 'work', component: WorkComponent, data: { animationState: 'Work' } },
+        { path: 'jamstack', component: JamstackComponent, data: { animationState: 'Work' } },
         { path: 'portfolio', component: ProjectsListComponent, data: { animationState: 'Portfolio' } },
         { path: 'portfolio/:slug', component: ProjectDetailComponent, data: { animationState: 'Portfolio' } },
         { path: 'speaking', component: SpeakingComponent, data: { animationState: 'Speaking' } },

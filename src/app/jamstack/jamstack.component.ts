@@ -3,10 +3,10 @@ import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-work',
-  templateUrl: './work.component.html',
-  styleUrls: ['./work.component.scss']
+  templateUrl: './jamstack.component.html',
+  styleUrls: ['./jamstack.component.scss']
 })
-export class WorkComponent implements OnInit {
+export class JamstackComponent implements OnInit {
   constructor(private titleService: Title) {
   }
 
