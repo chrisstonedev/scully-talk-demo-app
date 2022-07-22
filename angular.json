@@ -110,7 +110,7 @@
       }
     }
   },
-  "defaultProject": "personal-website",
+  "defaultProject": "scully-talk-demo-app",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
