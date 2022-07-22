@@ -1,13 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {PortfolioService} from '../portfolio.service';
+import {BuildService} from '../build.service';
 import {Project} from '../project';
 import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
-  providers: [PortfolioService],
+  providers: [BuildService],
 })
 export class ProjectDetailComponent implements OnInit {
   project: Project;
@@ -15,7 +15,7 @@ export class ProjectDetailComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private projectsService: PortfolioService,
+    private projectsService: BuildService,
     private titleService: Title,
   ) {
   }
@@ -27,10 +27,10 @@ export class ProjectDetailComponent implements OnInit {
     if (this.project === undefined) {
       this.onBack();
     }
-    this.titleService.setTitle(this.project.name + ' - Chris Stone');
+    this.titleService.setTitle(this.project.name + ' - Scully');
   }
 
   onBack(): void {
-    this.router.navigate(['portfolio']);
+    this.router.navigate(['build']);
   }
 }

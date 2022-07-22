@@ -1,16 +1,16 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { PortfolioService } from '../portfolio.service';
+import { BuildService } from '../build.service';
 import { Project } from '../project';
 import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-list',
-  templateUrl: './projects-list.component.html',
-  styleUrls: ['./projects-list.component.scss'],
+  templateUrl: './build.component.html',
+  styleUrls: ['./build.component.scss'],
   encapsulation: ViewEncapsulation.None,
-  providers: [PortfolioService],
+  providers: [BuildService],
 })
-export class ProjectsListComponent implements OnInit {
+export class BuildComponent implements OnInit {
   projects: Project[] = [];
   filteredProjects: Project[] = [];
   selectedLanguage = '';
@@ -22,11 +22,11 @@ export class ProjectsListComponent implements OnInit {
   sortOptions = ['Recently updated', 'Most commits', 'Recently created', 'Alphabetical'];
   selectedSortOption = this.sortOptions[0];
 
-  constructor(private projectsService: PortfolioService, private titleService: Title) {
+  constructor(private projectsService: BuildService, private titleService: Title) {
   }
 
   ngOnInit() {
-    this.titleService.setTitle('Portfolio - Chris Stone');
+    this.titleService.setTitle('The Build Process - Scully');
     this.loadProjectData();
     this.filterChange();
   }

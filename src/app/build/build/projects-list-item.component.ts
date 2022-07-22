@@ -1,6 +1,6 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 
-import { PortfolioService } from '../portfolio.service';
+import { BuildService } from '../build.service';
 import { Project } from '../project';
 
 @Component({
@@ -8,13 +8,13 @@ import { Project } from '../project';
   templateUrl: './projects-list-item.component.html',
   styleUrls: ['./projects-list-item.component.scss'],
   encapsulation: ViewEncapsulation.None,
-  providers: [PortfolioService],
+  providers: [BuildService],
 })
 export class ProjectsListItemComponent {
   @Input() project: Project;
-  projectsService: PortfolioService;
+  projectsService: BuildService;
 
-  constructor(projectsService: PortfolioService) {
+  constructor(projectsService: BuildService) {
     this.projectsService = projectsService;
   }
 }

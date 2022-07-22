@@ -3,7 +3,7 @@ import { Project } from './project';
 import projectData from '../../assets/projects-data.json';
 
 @Injectable()
-export class PortfolioService {
+export class BuildService {
   private projects: Project[] = projectData;
 
   constructor() {

@@ -1,7 +1,7 @@
 <li>
-  <input type='checkbox' [id]='title'>
-  <label [for]='title'>
-    <h3><span aria-hidden='true'>{{icon}} </span>{{title}}</h3>
+  <input type='checkbox' [id]='inputId'>
+  <label [for]='inputId'>
+    <h3 *ngIf='title'><span aria-hidden='true'>{{icon}} </span>{{title}}</h3>
     <p>{{description}}</p>
   </label>
 </li>

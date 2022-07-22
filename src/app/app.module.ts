@@ -7,15 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { JamstackComponent } from './jamstack/jamstack.component';
-import { ProjectsListComponent } from './portfolio/projects-list/projects-list.component';
-import { ProjectsListItemComponent } from './portfolio/projects-list/projects-list-item.component';
-import { ProjectDetailComponent } from './portfolio/project-detail/project-detail.component';
-import { SpeakingComponent } from './speaking/speaking-list/speaking.component';
-import { SpeakingTalkComponent } from './speaking/speaking-talk/speaking-talk.component';
-import { ContactComponent } from './contact/contact.component';
+import { BuildComponent } from './build/build/build.component';
+import { ProjectsListItemComponent } from './build/build/projects-list-item.component';
+import { ProjectDetailComponent } from './build/project-detail/project-detail.component';
+import { DemoComponent } from './demo/demo/demo.component';
+import { SpeakingTalkComponent } from './demo/speaking-talk/speaking-talk.component';
+import { ClosingComponent } from './closing/closing.component';
 import { AppRoutingModule } from './app-routing.module';
-import { PortfolioService } from './portfolio/portfolio.service';
-import { ConferenceListComponent } from './speaking/speaking-talk/conference-list/conference-list.component';
+import { BuildService } from './build/build.service';
+import { ConferenceListComponent } from './demo/speaking-talk/conference-list/conference-list.component';
 import { TaglinesComponent } from './home/taglines/taglines.component';
 import { SlideshowComponent } from './home/slideshow/slideshow.component';
 import { BenefitComponent } from './jamstack/benefit/benefit.component';
@@ -28,12 +28,12 @@ import { BackComponent } from './back/back.component';
     HeaderComponent,
     HomeComponent,
     JamstackComponent,
-    ProjectsListComponent,
+    BuildComponent,
     ProjectsListItemComponent,
     ProjectDetailComponent,
-    SpeakingComponent,
+    DemoComponent,
     SpeakingTalkComponent,
-    ContactComponent,
+    ClosingComponent,
     ConferenceListComponent,
     TaglinesComponent,
     SlideshowComponent,
@@ -47,7 +47,7 @@ import { BackComponent } from './back/back.component';
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [PortfolioService, Title],
+  providers: [BuildService, Title],
   bootstrap: [AppComponent]
 })
 export class AppModule {

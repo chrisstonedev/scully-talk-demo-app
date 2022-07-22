@@ -5,7 +5,7 @@ import talkData from '../../assets/talks-data.json';
 @Injectable({
   providedIn: 'root'
 })
-export class SpeakingService {
+export class DemoService {
   private talks: Talk[] = talkData;
 
   constructor() { }

@@ -40,11 +40,11 @@ function getTransitionState(moveToTheRight: boolean) {
 
 export const routeTransitionAnimations = trigger('triggerName', [
   transition(
-    'Home => Work, Home => Portfolio, Home => Speaking, Home => Contact, Work => Portfolio, Work => Speaking, Work => Contact, Portfolio => Speaking, Portfolio => Contact, Speaking => Contact',
+    'Home => Jamstack, Home => Build, Home => Demo, Home => Closing, Jamstack => Build, Jamstack => Demo, Jamstack => Closing, Build => Demo, Build => Closing, Demo => Closing',
     getTransitionState(true)
   ),
   transition(
-    'Contact => Speaking, Contact => Portfolio, Contact => Work, Contact => Home, Speaking => Portfolio, Speaking => Work, Speaking => Home, Portfolio => Work, Portfolio => Home, Work => Home',
+    'Closing => Demo, Closing => Build, Closing => Jamstack, Closing => Home, Demo => Build, Demo => Jamstack, Demo => Home, Build => Jamstack, Build => Home, Jamstack => Home',
     getTransitionState(false)
   )
 ]);

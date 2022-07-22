@@ -1,21 +1,21 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 
-import {PortfolioService} from './portfolio/portfolio.service';
+import {BuildService} from './build/build.service';
 import {routeTransitionAnimations} from './route-transition-animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [PortfolioService],
+  providers: [BuildService],
   animations: [routeTransitionAnimations]
 })
 export class AppComponent {
-  projectsService: PortfolioService;
+  buildService: BuildService;
 
-  constructor(projectsService: PortfolioService) {
-    this.projectsService = projectsService;
+  constructor(buildService: BuildService) {
+    this.buildService = buildService;
   }
 
   prepareRoute(outlet: RouterOutlet) {

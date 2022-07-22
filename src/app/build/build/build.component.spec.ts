@@ -1,22 +1,22 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { PortfolioService } from '../portfolio.service';
+import { BuildService } from '../build.service';
 import { Project } from '../project';
 
-import { ProjectsListComponent } from './projects-list.component';
+import { BuildComponent } from './build.component';
 
 describe('ProjectsListComponent', () => {
-  let component: ProjectsListComponent;
-  let projectService: PortfolioService;
+  let component: BuildComponent;
+  let projectService: BuildService;
 
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        providers: [PortfolioService, ProjectsListComponent],
+        providers: [BuildService, BuildComponent],
         imports: [RouterTestingModule],
       }).compileComponents();
-      component = TestBed.inject(ProjectsListComponent);
-      projectService = TestBed.inject(PortfolioService);
+      component = TestBed.inject(BuildComponent);
+      projectService = TestBed.inject(BuildService);
     })
   );
 

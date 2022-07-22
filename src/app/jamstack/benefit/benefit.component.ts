@@ -9,4 +9,5 @@ export class BenefitComponent {
   @Input() title = '';
   @Input() icon = '';
   @Input() description = '';
+  @Input() inputId = '';
 }

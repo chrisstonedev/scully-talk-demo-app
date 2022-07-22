@@ -11,6 +11,6 @@ export class JamstackComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle('Work - Chris Stone');
+    this.titleService.setTitle('What Is Jamstack? - Scully');
   }
 }
