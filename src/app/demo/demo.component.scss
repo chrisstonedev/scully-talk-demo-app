@@ -1,0 +1,38 @@
+.form-check {
+  padding: 1rem 3rem;
+}
+
+.filter-card {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 8px 32px;
+}
+
+.filter-card h5 {
+  margin: 0;
+}
+
+.filter-card label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+p a {
+  color: #acf;
+}
+
+.demo-task-grid {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}

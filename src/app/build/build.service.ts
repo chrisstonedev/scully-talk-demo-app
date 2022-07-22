@@ -1,15 +1,16 @@
-import { Injectable } from '@angular/core';
-import { BuildStep } from './build-step';
+import {Injectable} from '@angular/core';
+import {BuildStep} from "./build-step";
 import buildData from '../../assets/build-data.json';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class BuildService {
-  private projects: BuildStep[] = buildData;
+  private buildSteps: BuildStep[] = buildData;
 
-  constructor() {
-  }
+  constructor() { }
 
-  getProjects() {
-    return this.projects;
+  getTalks() {
+    return this.buildSteps;
   }
 }

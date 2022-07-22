@@ -1,0 +1,40 @@
+a.portfolio-item {
+  background: #ffffff40;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #0008;
+  color: #fffb;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: .2s;
+
+  &:hover {
+    background: #fff6;
+    transform: scale(1.05) rotate(3deg);
+  }
+
+  img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 10px;
+
+    h2 {
+      color: #eef;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+
+    p {
+      color: #bbf;
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
+}

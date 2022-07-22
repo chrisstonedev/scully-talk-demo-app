@@ -17,11 +17,11 @@ h1 {
   margin-bottom: 0;
 }
 
-h2{
+h2 {
   font-size: 24pt;
 }
 
-h3{
+h3 {
   font-size: 20pt;
 }
 
@@ -86,4 +86,18 @@ article {
 
 p {
   font-size: 20pt;
+}
+
+.format-as-code {
+  background: #0004;
+  color: #fbb;
+  font-family: monospace;
+}
+
+dt {
+  font-size: 20pt;
+}
+dd {
+  font-size: 16pt;
+  margin-bottom: 16px;
 }

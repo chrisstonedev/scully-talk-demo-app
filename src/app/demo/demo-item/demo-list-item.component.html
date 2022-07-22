@@ -1,0 +1,7 @@
+<a [routerLink]="['/demo', demoTask.slug]" class='portfolio-item'>
+  <img [alt]='demoTask.image.alt' [src]='demoTask.image.path'>
+  <div class='card-body'>
+    <h2>{{ demoTask.name }}</h2>
+    <p>{{ demoTask.tagline }}</p>
+  </div>
+</a>

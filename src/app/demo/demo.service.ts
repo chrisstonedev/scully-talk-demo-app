@@ -1,16 +1,15 @@
-import {Injectable} from '@angular/core';
-import {Talk} from "./talk";
-import talkData from '../../assets/talks-data.json';
+import { Injectable } from '@angular/core';
+import { DemoTask } from './demo-task';
+import demoData from '../../assets/demo-data.json';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DemoService {
-  private talks: Talk[] = talkData;
+  private demos: DemoTask[] = demoData;
 
-  constructor() { }
+  constructor() {
+  }
 
-  getTalks() {
-    return this.talks;
+  getProjects() {
+    return this.demos;
   }
 }

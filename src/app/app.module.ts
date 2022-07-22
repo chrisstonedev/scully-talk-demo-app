@@ -7,15 +7,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { JamstackComponent } from './jamstack/jamstack.component';
-import { BuildComponent } from './build/build/build.component';
-import { ProjectsListItemComponent } from './build/build/projects-list-item.component';
-import { ProjectDetailComponent } from './build/project-detail/project-detail.component';
-import { DemoComponent } from './demo/demo/demo.component';
-import { SpeakingTalkComponent } from './demo/speaking-talk/speaking-talk.component';
+import { BuildComponent } from './build/build.component';
+import { DemoListItemComponent } from './demo/demo-item/demo-list-item.component';
+import { DemoTaskComponent } from './demo/demo-task/demo-task.component';
+import { DemoComponent } from './demo/demo.component';
+import { BuildStepComponent } from './build/build-step/build-step.component';
 import { ClosingComponent } from './closing/closing.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BuildService } from './build/build.service';
-import { ConferenceListComponent } from './demo/speaking-talk/conference-list/conference-list.component';
 import { TaglinesComponent } from './home/taglines/taglines.component';
 import { SlideshowComponent } from './home/slideshow/slideshow.component';
 import { BenefitComponent } from './jamstack/benefit/benefit.component';
@@ -30,12 +29,11 @@ import { HiddenImageComponent } from './jamstack/hidden-image/hidden-image.compo
     HomeComponent,
     JamstackComponent,
     BuildComponent,
-    ProjectsListItemComponent,
-    ProjectDetailComponent,
+    DemoListItemComponent,
+    DemoTaskComponent,
     DemoComponent,
-    SpeakingTalkComponent,
+    BuildStepComponent,
     ClosingComponent,
-    ConferenceListComponent,
     TaglinesComponent,
     SlideshowComponent,
     BenefitComponent,

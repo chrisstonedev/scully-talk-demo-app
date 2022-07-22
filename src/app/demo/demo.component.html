@@ -1,0 +1,39 @@
+<h1>Demo Time</h1>
+<p>
+  Let's review the steps that we will soon take to demonstrate Scully.
+</p>
+<div class='card text-white bg-dark mb-3 filter-card'>
+  <h5>Filter</h5>
+  <div class='filters'>
+    <label>
+      <span>Language: </span>
+      <select (change)='filterChange()' [(ngModel)]='selectedLanguage'>
+        <option selected='' value=''>All Languages</option>
+        <option *ngFor='let language of languages'>{{language}}</option>
+      </select>
+    </label>
+    <label>
+      <span>Platform: </span>
+      <select (change)='filterChange()' [(ngModel)]='selectedPlatform'>
+        <option selected='' value=''>All Platforms</option>
+        <option *ngFor='let platform of platforms'>{{platform}}</option>
+      </select>
+    </label>
+    <label>
+      <span>Library: </span>
+      <select (change)='filterChange()' [(ngModel)]='selectedLibrary'>
+        <option selected='' value=''>All Libraries</option>
+        <option *ngFor='let library of libraries'>{{library}}</option>
+      </select>
+    </label>
+    <label>
+      <span>Sort: </span>
+      <select (change)='filterChange()' [(ngModel)]='selectedSortOption'>
+        <option *ngFor='let sortOption of sortOptions'>{{sortOption}}</option>
+      </select>
+    </label>
+  </div>
+</div>
+<div class='demo-task-grid'>
+  <app-item *ngFor='let demoTask of demoTasks' [demoTask]='demoTask'></app-item>
+</div>

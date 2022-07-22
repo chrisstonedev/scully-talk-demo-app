@@ -1,29 +1,15 @@
-import { ImageData } from "../demo/talk";
-
 export interface BuildStep {
   slug: string;
-  name: string;
-  tagline: string;
-  dateCreated: string;
-  dateUpdated: string;
-  commits: number;
-  languages: string[];
-  platforms: string[];
-  libraries: string[];
-  image: ImageData;
-  availability: {
-    buttonLabel: string;
-    link: string;
-  };
-  openSourceLink: string;
-  description: string;
-  purpose: string;
-  challenge: string;
-  netlifyBadge: Badge;
-  cypressBadge: Badge;
+  title: string;
+  files: File[];
 }
 
-export interface Badge {
-  imageUrl: string;
-  linkUrl: string;
+export interface ImageData {
+  path: string;
+  alt: string;
+}
+
+export interface File {
+  name: string;
+  description: string;
 }

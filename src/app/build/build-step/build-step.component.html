@@ -1,0 +1,11 @@
+<app-back routerLink='/build'></app-back>
+<h1>{{talk.title}}</h1>
+<ng-container *ngIf='talk.files'>
+  <h2>Files</h2>
+  <dl *ngIf='talk.files'>
+    <ng-container *ngFor='let file of talk.files'>
+      <dt>{{file.name}}</dt>
+      <dd>{{file.description}}</dd>
+    </ng-container>
+  </dl>
+</ng-container>

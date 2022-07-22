@@ -1,0 +1,16 @@
+<h1>The Build Process</h1>
+<h2>Angular build</h2>
+<p>In Angular, when you run <span class='format-as-code'>ng build</span>, the following steps occur:</p>
+<div class='speaking-grid'>
+  <a *ngFor='let buildStep of buildSteps' [routerLink]="['/build', buildStep.slug]">
+    <div class='card-body'>
+      <h2>{{buildStep.title}}</h2>
+    </div>
+  </a>
+</div>
+<h2>Scully build</h2>
+<p>In Angular, when you run <span class='format-as-code'>npx scully --</span>, the following steps occur:</p>
+<ul class='benefit-list'>
+  <app-benefit inputId='how-1' description='It just does.'></app-benefit>
+  <app-benefit inputId='how-2' description='Thank you!'></app-benefit>
+</ul>
