@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {BuildService} from '../build.service';
-import {Project} from '../project';
+import {BuildStep} from '../build-step';
 import {Title} from '@angular/platform-browser';
 
 @Component({
@@ -10,7 +10,7 @@ import {Title} from '@angular/platform-browser';
   providers: [BuildService],
 })
 export class ProjectDetailComponent implements OnInit {
-  project: Project;
+  project: BuildStep;
 
   constructor(
     private activatedRoute: ActivatedRoute,

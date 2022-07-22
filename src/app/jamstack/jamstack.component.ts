@@ -3,8 +3,7 @@ import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-work',
-  templateUrl: './jamstack.component.html',
-  styleUrls: ['./jamstack.component.scss']
+  templateUrl: './jamstack.component.html'
 })
 export class JamstackComponent implements OnInit {
   constructor(private titleService: Title) {

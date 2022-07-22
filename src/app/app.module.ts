@@ -21,6 +21,7 @@ import { SlideshowComponent } from './home/slideshow/slideshow.component';
 import { BenefitComponent } from './jamstack/benefit/benefit.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 import { BackComponent } from './back/back.component';
+import { HiddenImageComponent } from './jamstack/hidden-image/hidden-image.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { BackComponent } from './back/back.component';
     SlideshowComponent,
     BenefitComponent,
     AboutMeComponent,
-    BackComponent
+    BackComponent,
+    HiddenImageComponent
   ],
   imports: [
     BrowserModule,

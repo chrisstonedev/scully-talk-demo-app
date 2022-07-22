@@ -1,7 +1,7 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 import { BuildService } from '../build.service';
-import { Project } from '../project';
+import { BuildStep } from '../build-step';
 
 @Component({
   selector: 'app-item',
@@ -11,7 +11,7 @@ import { Project } from '../project';
   providers: [BuildService],
 })
 export class ProjectsListItemComponent {
-  @Input() project: Project;
+  @Input() project: BuildStep;
   projectsService: BuildService;
 
   constructor(projectsService: BuildService) {

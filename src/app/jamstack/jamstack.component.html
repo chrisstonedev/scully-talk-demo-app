@@ -1,16 +1,27 @@
 <h1>What is Jamstack?</h1>
-<h2>Definition</h2>
-<ul class='full-benefit'>
-  <app-benefit inputId='what-is-jamstack' description='"Jamstack is an architectural approach that decouples the web experience layer from data and business logic, improving flexibility, scalability, performance, and maintainability." (jamstack.org)'></app-benefit>
+<h2>Definition and history</h2>
+<ul class='benefit-list'>
+  <app-benefit inputId='what-is-jamstack'
+               description='"Jamstack is an architectural approach that decouples the web experience layer from data and business logic, improving flexibility, scalability, performance, and maintainability." (jamstack.org)'></app-benefit>
+  <app-benefit inputId='jamstack-2015'
+               description='"We coined the term ‘Jamstack’ in 2015 to better define what developers were already starting to do – decouple the front- and back-end web and apps, focus on best practices of speed and availability, and redefine their workflows," [Netlify CEO Mathias] Biilmann explained. (sdtimes.com)'></app-benefit>
 </ul>
-<h2>Jam?</h2>
-<ul class='full-benefit'>
-  <app-benefit inputId='jam-j' title='JavaScript' description='JavaScript'></app-benefit>
-  <app-benefit inputId='jam-a' title='APIs' description='APIs'></app-benefit>
-  <app-benefit inputId='jam-m' title='Markup' description='Markup'></app-benefit>
+<h2>What does JAM mean?</h2>
+<ul class='benefit-list'>
+  <app-benefit inputId='jam-j' title='JavaScript'
+               description='Dynamic functionality from any of several frameworks'></app-benefit>
+  <app-benefit inputId='jam-a' title='APIs' description='Edge functions and third-party services'></app-benefit>
+  <app-benefit inputId='jam-m' title='Markup' description='Static HTML and CSS files'></app-benefit>
+</ul>
+<h2>How does that change the files we deploy?</h2>
+<ul class='benefit-list'>
+  <app-hidden-image inputId='file-system-many' src='/assets/file-system-many-html.png'
+                    alt='A list of files that shows one HTML file'></app-hidden-image>
+  <app-hidden-image inputId='file-system-one' src='/assets/file-system-one-html.png'
+                    alt='A list of files that shows many HTML files'></app-hidden-image>
 </ul>
 <h2>Benefits of Jamstack</h2>
-<ul class='work-card-grid'>
+<ul class='benefit-list'>
   <app-benefit inputId='security' title='Security' icon='🔒'
                description='Can deploy static assets to a read-only CDN and fewer servers, reducing attack vectors'></app-benefit>
   <app-benefit inputId='scale' title='Scale' icon='⛰'
@@ -18,11 +29,23 @@
   <app-benefit inputId='performance' title='Performance' icon='💪'
                description='Almost instant initial page load and wait to do fun JavaScript later'></app-benefit>
   <app-benefit inputId='maintainability' title='Maintainability' icon='🧹'
-               description='Deploying pre-generated content to a CDN means there is no need to worry about keeping servers running and up-to-date.'></app-benefit>
+               description='Deploy pre-generated content to a CDN; no need to keep servers running and up-to-date'></app-benefit>
   <app-benefit inputId='portability' title='Portability' icon='✈️'
                description='Eliminate infrastructure lock-in and deploy anywhere you want'></app-benefit>
   <app-benefit inputId='visibility' title='Visibility' icon='👀'
                description='More HTML pages means more search engine representation'></app-benefit>
   <app-benefit inputId='developer-experience' title='Developer Experience' icon='👨‍💻'
                description='Feel free to use many kinds of tools and frameworks'></app-benefit>
+</ul>
+<h2>How to start using Jamstack</h2>
+<p>Many tools and static site generators are listed on <a href='https://jamstack.org/generators/' target='_blank'>jamstack.org/generators</a>
+</p>
+<h2>What does an Angular Jamstack even look like?</h2>
+<ul class='benefit-list'>
+  <app-hidden-image inputId='angular-jamstack' src='/assets/angular-jamstack.png'
+                    alt='Three jam jars that all have the Angular logo on their label'></app-hidden-image>
+  <app-benefit inputId='angular-universal' title='Angular Universal'
+               description='Tools provided through Angular that can provide server-side rendering, best when designing an app from scratch'></app-benefit>
+  <app-benefit inputId='scully-option' title='Scully'
+               description='Open source library that takes a built Angular application and scans through it to generate new static assets'></app-benefit>
 </ul>

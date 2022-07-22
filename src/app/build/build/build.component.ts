@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { BuildService } from '../build.service';
-import { Project } from '../project';
+import { BuildStep } from '../build-step';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -11,8 +11,8 @@ import { Title } from '@angular/platform-browser';
   providers: [BuildService],
 })
 export class BuildComponent implements OnInit {
-  projects: Project[] = [];
-  filteredProjects: Project[] = [];
+  projects: BuildStep[] = [];
+  filteredProjects: BuildStep[] = [];
   selectedLanguage = '';
   selectedPlatform = '';
   selectedLibrary = '';

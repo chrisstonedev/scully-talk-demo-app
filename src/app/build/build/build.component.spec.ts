@@ -1,7 +1,7 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { BuildService } from '../build.service';
-import { Project } from '../project';
+import { BuildStep } from '../build-step';
 
 import { BuildComponent } from './build.component';
 
@@ -25,7 +25,7 @@ describe('ProjectsListComponent', () => {
   });
 
   it('should load all projects', () => {
-    let projectList: Project[] = [
+    let projectList: BuildStep[] = [
       {
         slug: 'website',
         name: 'Website',
@@ -60,7 +60,7 @@ describe('ProjectsListComponent', () => {
   });
 
   it('should load the languages list from project data', () => {
-    let projectList: Project[] = [
+    let projectList: BuildStep[] = [
       {
         slug: null,
         name: null,
@@ -108,7 +108,7 @@ describe('ProjectsListComponent', () => {
   });
 
   it('should filter projects from the language dropdown', () => {
-    let projectList: Project[] = [
+    let projectList: BuildStep[] = [
       {
         slug: null,
         name: 'A',

@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Project } from './project';
-import projectData from '../../assets/projects-data.json';
+import { BuildStep } from './build-step';
+import buildData from '../../assets/build-data.json';
 
 @Injectable()
 export class BuildService {
-  private projects: Project[] = projectData;
+  private projects: BuildStep[] = buildData;
 
   constructor() {
   }

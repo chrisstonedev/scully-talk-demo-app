@@ -13,8 +13,16 @@ body {
 }
 
 h1 {
-  font-size: 28pt;
+  font-size: 36pt;
   margin-bottom: 0;
+}
+
+h2{
+  font-size: 24pt;
+}
+
+h3{
+  font-size: 20pt;
 }
 
 a {
@@ -65,4 +73,17 @@ article {
       color: white;
     }
   }
+}
+
+.benefit-list {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 20pt;
 }

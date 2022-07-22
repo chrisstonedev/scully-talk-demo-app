@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { ProjectsListItemComponent } from './projects-list-item.component';
-import { Project } from '../project';
-import projectData from '../../../assets/projects-data.json';
+import { BuildStep } from '../build-step';
+import projectData from '../../../assets/build-data.json';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ProjectsListItemComponent', () => {
@@ -20,7 +20,7 @@ describe('ProjectsListItemComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ProjectsListItemComponent);
     component = fixture.componentInstance;
-    const list: Project[] = projectData;
+    const list: BuildStep[] = projectData;
     component.project = list[0];
     fixture.detectChanges();
   });

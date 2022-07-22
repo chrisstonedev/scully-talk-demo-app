@@ -1,6 +1,6 @@
 import { ImageData } from "../demo/talk";
 
-export interface Project {
+export interface BuildStep {
   slug: string;
   name: string;
   tagline: string;
