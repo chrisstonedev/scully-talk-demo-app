@@ -11,19 +11,4 @@ export interface DemoTask {
   platforms: string[];
   libraries: string[];
   image: ImageData;
-  availability: {
-    buttonLabel: string;
-    link: string;
-  };
-  openSourceLink: string;
-  description: string;
-  purpose: string;
-  challenge: string;
-  netlifyBadge: Badge;
-  cypressBadge: Badge;
-}
-
-export interface Badge {
-  imageUrl: string;
-  linkUrl: string;
 }
