@@ -1,15 +1,11 @@
 [build]
-  command = "npm run scully:build"
+  command = "npm run build"
   functions = ""
-  publish = "dist/static/"
+  publish = "dist/dynamic/"
 [dev]
   command = "npm run start"
   functions = ""
   publish = "src"
-[[plugins]]
-  package = "netlify-plugin-cypress"
-  [plugins.inputs]
-    record = true
 [[redirects]]
   from = "/*"
   to = "/index.html"
