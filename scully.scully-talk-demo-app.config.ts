@@ -1,18 +1,18 @@
 import { registerPlugin, ScullyConfig } from '@scullyio/scully';
 import '@scullyio/scully-plugin-puppeteer';
 
-const projectData = require('./src/assets/projects-data.json');
-const talkData = require('./src/assets/talks-data.json');
+const buildData = require('./src/assets/build-data.json');
+const demoData = require('./src/assets/demo-data.json');
 
-registerPlugin('router', 'portfolioSlugPlugin', async () => {
-  return projectData.map(x => {
-    return {route: `/portfolio/${x.slug}`};
+registerPlugin('router', 'buildSlugPlugin', async () => {
+  return buildData.map(x => {
+    return {route: `/build/${x.slug}`};
   });
 });
 
-registerPlugin('router', 'speakingSlugPlugin', async () => {
-  return talkData.map(x => {
-    return {route: `/speaking/${x.slug}`};
+registerPlugin('router', 'demoSlugPlugin', async () => {
+  return demoData.map(x => {
+    return {route: `/demo/${x.slug}`};
   });
 });
 
@@ -28,11 +28,11 @@ export const config: ScullyConfig = {
         folder: "./blog"
       }
     },
-    "/portfolio/:slug": {
-      type: 'portfolioSlugPlugin'
+    "/build/:slug": {
+      type: 'buildSlugPlugin'
     },
-    "/speaking/:slug": {
-      type: 'speakingSlugPlugin'
+    "/demo/:slug": {
+      type: 'demoSlugPlugin'
     }
   }
 };
