@@ -21,6 +21,7 @@ import { BenefitComponent } from './jamstack/benefit/benefit.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 import { BackComponent } from './back/back.component';
 import { HiddenImageComponent } from './jamstack/hidden-image/hidden-image.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { HiddenImageComponent } from './jamstack/hidden-image/hidden-image.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ScullyLibModule
   ],
   providers: [BuildService, Title],
   bootstrap: [AppComponent]

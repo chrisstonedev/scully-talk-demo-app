@@ -7,7 +7,12 @@
     "build": "ng build",
     "test": "ng test",
     "test:i": "ng test --browsers=Chrome",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "scully": "scully --",
+    "scully:serve": "scully serve --",
+    "scully:scan": "scully --scanRoutes",
+    "scully:full-build-serve": "npm run build && npm run scully && npm run scully:serve",
+    "scully:build": "npm run build && npm run scully --scanRoutes"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +25,9 @@
     "@angular/platform-browser-dynamic": "14.1.0",
     "@angular/platform-server": "14.1.0",
     "@angular/router": "14.1.0",
+    "@scullyio/init": "^2.1.36",
+    "@scullyio/ng-lib": "^2.1.36",
+    "@scullyio/scully-plugin-puppeteer": "^2.1.36",
     "rxjs": "^7.5.6",
     "zone.js": "0.11.4"
   },

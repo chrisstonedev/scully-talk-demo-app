@@ -1,0 +1,21 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    background: #002;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 16px;
+
+    a {
+      font-size: 24pt;
+    }
+
+    p {
+      font-size: 14pt;
+      padding-left: 16px;
+    }
+  }
+}

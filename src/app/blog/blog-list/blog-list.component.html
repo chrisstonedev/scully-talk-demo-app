@@ -1,0 +1,8 @@
+<ul aria-label="Blog posts">
+  <li *ngFor="let blog of blogPosts | async">
+    <a [routerLink]="blog.route">
+      {{blog.title}} by {{blog.authorName}}
+    </a>
+    <p>{{blog.description}}</p>
+  </li>
+</ul>
