@@ -12,7 +12,7 @@
     "scully:serve": "scully serve --",
     "scully:scan": "scully --scanRoutes",
     "scully:full-build-serve": "npm run build && npm run scully && npm run scully:serve",
-    "scully:build": "npm run build && npm run scully --scanRoutes"
+    "scully:build": "npm run build && npm run scully -- --scanRoutes"
   },
   "private": true,
   "dependencies": {
